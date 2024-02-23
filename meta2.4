@@ -1,0 +1,13 @@
+import pandas as pd
+import openpyxl
+
+dataframe = pd.read_csv("data.cvs")
+print(dataframe)
+
+print(dataframe["A"].mean())
+print(dataframe["B"].max())
+print(dataframe["C"].min())
+print(dataframe["D"].describe())
+print(dataframe[dataframe["Modelo"]>1.5])
+dfc = dataframe[dataframe["C"]==0.6666659385796617]
+print(dfc)
